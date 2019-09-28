@@ -1,5 +1,12 @@
 @{
     ViewData["Title"] = "Plugin1";
 }
+@model MessageModel
 
-<p>Hello world from Plugin1!</p>
+<p>@Model.Message</p>
+
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <input asp-for="Message" />
+    <button type="submit">Submit</button>
+</form>
