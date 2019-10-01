@@ -1,0 +1,12 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model MvcAppPlugin1.Pages.Demo
+
+<strong>@Model.Message</strong>
+
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <label>Update message to say:</label>
+    <input asp-for="Message" />
+    <button type="submit">Submit</button>
+</form>

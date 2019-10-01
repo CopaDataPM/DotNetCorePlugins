@@ -30,6 +30,7 @@ namespace MvcWebApp
                 .UseEndpoints(r =>
                 {
                     r.MapDefaultControllerRoute();
+                    r.MapRazorPages();
                 });
         }
     }
